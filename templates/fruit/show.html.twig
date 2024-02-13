@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h3>un fruit</h3>
+    <p>name :{{ fruit.name }}</p>
+    <p>price :{{ fruit.price }}</p>
+
+    <a href="{{ path('app_fruit') }}">retour</a>
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+

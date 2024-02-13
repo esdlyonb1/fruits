@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FruitController!{% endblock %}
+
+{% block body %}
+<h3>Les fruits</h3>
+    {% for fruit in fruits %}
+
+        <p>name : {{ fruit.name }}</p>
+        <p>price : {{ fruit.price }}</p>
+
+    {% endfor %}
+
+{% endblock %}

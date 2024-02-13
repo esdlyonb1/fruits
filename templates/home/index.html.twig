@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+<h3>Bonjour
+
+   {% if prenom %}
+    {{ prenom }}
+    {% else %}
+    visiteur
+    {% endif %}
+
+</h3>
+
+    <form action="" method="get">
+
+        <input type="text" name="prenom" id="">
+        <button type="submit">ok</button>
+    </form>
+
+
+    <a href="{{ path('autrepage') }}">Lien vers l'autre page</a>
+    <a href="{{ path('app_fruit') }}">page des fruits</a>
+{% endblock %}
